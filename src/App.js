@@ -5,8 +5,8 @@ import { v4 as uuidv4 } from "uuid";
 import Header from "./components/Header";
 function App() {
   const [todoList, setTodoList] = useState([
-    { data: "ItemVal 1", id: uuidv4() },
-    { data: "ItemVal 2", id: uuidv4() },
+    { data: "Complete ReactJS Course", id: uuidv4() },
+    { data: "Learn Important react concepts", id: uuidv4() },
   ]);
   const [itemVal, setItemVal] = useState();
 
@@ -44,7 +44,12 @@ function App() {
         <Header title="ToDo List" />
         <div className="todo-list">
           <div className="input-area">
-            <input type="text" name="" onInput={setInputTextValue} />
+            <input
+              type="text"
+              name=""
+              onInput={setInputTextValue}
+              placeholder="add todo here..."
+            />
             <button
               onClick={() => {
                 addTodo(itemVal);

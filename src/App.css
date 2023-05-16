@@ -22,11 +22,16 @@ main .input-area {
   grid-template-columns: 2fr 1fr;
 }
 
+main .input-area input {
+  padding: 5px;
+}
+
 main .todo-item {
   display: grid;
   grid-template-columns: 3fr 20px 1fr;
   gap: 10px;
   margin-bottom: 5px;
+  align-items: center;
 }
 
 main .item-value {
